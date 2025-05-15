@@ -1,0 +1,110 @@
+/* Navbar Styles - High Specificity */
+html body .navbar.navbar-expand-lg.navbar-dark {
+  background-color: rgba(220, 53, 69, 0.95) !important;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1030;
+  position: relative;
+}
+
+html body .navbar.navbar-expand-lg.navbar-dark .navbar-brand img {
+  height: 40px;
+  width: auto;
+  transition: transform 0.2s;
+  margin-right: 0.5rem;
+}
+
+html body .navbar.navbar-expand-lg.navbar-dark .navbar-brand img:hover {
+  transform: scale(1.05);
+}
+
+.brand-title {
+  color: #2c3e50;
+  font-weight: 700;
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, var(--vf-primary), var(--vf-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.brand-subtitle {
+  color: #6c757d;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* VitalFlow Theme Colors */
+:root {
+  --vf-primary: #ff0000;
+  --vf-secondary: #212529;
+  --vf-accent: #0d6efd;
+  --vf-light: #f8f9fa;
+  --vf-dark: #343a40;
+}
+
+/* Logo specific styles */
+.vf-logo-container {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  padding: 0;
+  margin-right: 1rem;
+}
+
+.vf-logo-text {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  line-height: 1;
+}
+
+.vf-logo-text-vital {
+  color: var(--vf-primary);
+}
+
+.vf-logo-text-flow {
+  color: var(--vf-accent);
+}
+
+.vf-logo-tagline {
+  font-size: 0.9rem;
+  color: #fff;
+  margin: 0.2rem 0 0 0;
+  opacity: 0.9;
+}
+
+/* Custom button styles */
+.btn-custom {
+  border-radius: 6px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-custom:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Navbar button styles */
+html body .navbar.navbar-expand-lg.navbar-dark .nav-link.btn {
+  color: #fff !important;
+  margin: 0 0.25rem;
+  border-radius: 6px;
+  padding: 0.5rem 1.5rem;
+}
+
+html body .navbar.navbar-expand-lg.navbar-dark .nav-link.btn-primary {
+  background-color: var(--vf-accent) !important;
+  border-color: var(--vf-accent) !important;
+}
+
+html body .navbar.navbar-expand-lg.navbar-dark .nav-link.btn-danger {
+  background-color: var(--vf-primary) !important;
+  border-color: var(--vf-primary) !important;
+}
+
+
+
